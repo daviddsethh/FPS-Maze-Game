@@ -1,0 +1,62 @@
+#gameCanvas{
+  position: absolute;
+  width: 700px;
+  height: 307px;
+  margin-top: 42px;
+  z-index: -1;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#minimap{ 
+  position: absolute;
+  width: 290px;
+  height: 307px;
+  left: 715px;
+  margin-top: 42px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#screenshot-wrapper{
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  margin-top: 319px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#camera{
+  position: absolute;
+  width: 100px; 
+  left: 610px;
+  top: 180px;
+}
+#background-bar{
+	background-color: darkRed;
+	background-image: linear-gradient(to right, #00000000, #00000080);
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 997px;
+	height: 30px;
+	margin-top: -26px;
+}
+.lside{
+	color: white;
+	font-size: 16px;
+	text-align: left;
+	margin-top: -9px;
+	padding-right: 5px;
+}
+.middle{
+	color: yellow;
+	font-size: 15px;
+	text-align: center;
+	margin-top: -45px;
+	padding-right: 800px;
+}
+.rside{
+	color: yellow;
+	font-size: 15px;
+	text-align: right;
+	margin-top: -18px;
+	padding-right: 900px;
+}

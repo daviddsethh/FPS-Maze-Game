@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Camera Guy</title>
+		<link rel="stylesheet" type="text/css" href="game.css"/>
+	</head>
+	<body>
+		<!-- Area for game display -->
+		<canvas id="gameCanvas"></canvas>
+		
+		<!-- Area for overhead map display -->
+		<canvas id="minimap"></canvas>
+		
+		<!-- Character HUD -->		
+		<div id="heading">
+			<div class="lside"><h1>Seth's Super Maze</h1></div>
+			<div class="middle">Player X = &emsp;&emsp;&emsp; Player Y =</div>
+			<div class="rside">Percentage Completed =</div>
+		</div>
+		<div id="background-bar"></div>
+			
+		<!-- Area for "camera" screen capture display -->
+		<img id="camera" src="camera.png">
+		<div id="screenshot-wrapper">
+			<canvas id="screenshot"></canvas>
+		</div>
+		<script>
+			let iteration = 0;
+			function gameLoop() {
+				// update game state
+				iteration++;
+				
+			player.showPosition(iteration);
+				// render game
+				
+			requestAnimationFrame(gameLoop);
+			}
+			gameLoop();
+		</script>	
+		<!-- Load JavaScript Libraries -->
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="filtrr2.js"></script>
+		<script type="text/javascript" src="jaws.js"></script>
+		<script type="text/javascript" src="game.js"></script>
+		
+		<!-- Player position -->
+		
+		
+		<!-- Start game -->
+		<script>
+			jaws.assets.add(["dino.png"])
+			jaws.start(Game);
+		</script>
+	</body>
+</html>
