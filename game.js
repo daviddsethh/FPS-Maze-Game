@@ -312,8 +312,7 @@ var player = {
 			var currentDistance = Math.sqrt((14 - playerX) * (14 - playerX) + (14 - playerY) * (14 - playerY));
 			var percentageCompleted = 100 - Math.round((currentDistance / totalDistance) * 100);
 			
-			document.querySelector('.middle').innerHTML = 'Player X = ${playerX} &emsp;&emsp;&emsp; Player Y = ${playerY}';
-			document.querySelector('.rside').innerHTML = 'Percentage Completed = ${percentageCompleted}% &emsp;&emsp;&emsp; Iteration = ${iteration}';
+			document.querySelector('.middle').innerHTML = 'Press Space to Take a Picture';
 		};	
 		
 		// Establish player movement
